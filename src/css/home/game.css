@@ -1,18 +1,23 @@
+body{
+	overflow: hidden;
+}
 
 .wrap{
 	background-color: #597AD7;
 	width: 100%;
 	height: 100%;
-	padding-top: 48px;
+	/*padding-top: 48px;*/
+	box-sizing: border-box;
 }
 
 .sp_bg{
-	background-image: url(../../img/sp6.png);
+	background-image: url(../../img/sp.png);
 	background-repeat: no-repeat;
 }
 
 .header{
 	position: fixed;
+	z-index: 9;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -85,14 +90,78 @@
 .p1{
 	background-image: url(../../img/hg_bg.png);
 	background-size: 100% 100%;
-	height: 426px;
+	height: 476px;
 	text-align: center;
 }
-#canvas{
-	width: 328px;
+.p1_box{
+	position: relative;
 	border: 2px solid #58b7eb;
 	border-top: none;
 	margin: auto;
 	border-radius: 0 0 30px 30px;
-	height: 400px;
+	width: 328px;
+	height: 450px;
+	overflow: hidden;
+}
+#canvas{
+	width: 100%;
+	height: 100%;
+	background-image: url(../../img/hg_game_bg.png);
+	background-size: 100% 100%;
+}
+.btn_present{
+	position: absolute;
+	width: 88px;
+	top: 54px;
+	left: 4px;
+}
+
+.p2{
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5px;
+}
+.p2_img{
+	width: 29px;
+	height: 29px;
+	border: 1px solid #8ba2e3;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.p2_desc{
+	color: #FFFFFF;
+	font-size: 15px;
+}
+.p3{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-image: url(../../img/hi_footer_bg.png);
+	background-size: 100% 100%;
+	height: 75px;
+}
+.p3_box{
+	display: flex;
+	box-sizing: border-box;
+	justify-content: space-between;
+	position: absolute;
+	left: 32px;
+	right: 20px;
+	top: -10px;
+	
+} 
+.btn_tornado{
+	width: 80px;
+}
+.btn_tornado > img{
+	width: 100%;
+}
+.btn_go{
+	width: 200px;
+}
+.btn_go > img{
+	width: 100%;
 }
