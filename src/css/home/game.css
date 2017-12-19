@@ -1,0 +1,98 @@
+
+.wrap{
+	background-color: #597AD7;
+	width: 100%;
+	height: 100%;
+	padding-top: 48px;
+}
+
+.sp_bg{
+	background-image: url(../../img/sp6.png);
+	background-repeat: no-repeat;
+}
+
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 0 8px;
+	display: flex;
+	height: 48px;
+	justify-content: space-between;
+	align-items: center;
+	background-image: url(../../img/hg_header_bg.png);
+	background-size: 100% 100%;
+}
+.header1{
+	display: flex;
+	align-items: center;
+	color: #FFFFFF;
+}
+.data_headimg{
+	width: 32px;
+	height: 32px;
+	background-position: -111px -277px;
+	line-height: 32px;
+	text-align: center;
+	font-size: 12px;
+	font-family: STHupo;
+}
+.header2{
+	padding: 0 16px;
+	text-align: center;
+	position: relative;
+	color: #F95591;
+	font-size: 15px;
+	background-color: rgba(255,255,255, .42);
+	border-top: 1px solid rgba(255, 255, 255, .9);
+	border-bottom: 1px solid rgba(76,50,0,0.14);
+	line-height: 23px;
+}
+.h_money{
+	background-position: -124px -2px;
+	width: 39px;
+	height: 39px;
+	position: absolute;
+	right: 100%;
+	top: 50%;
+	margin-right: -8px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+.btn_addMoney{
+	background-position: -1px -1px;
+	width: 32px;
+	height: 30px;
+	position: absolute;
+	left: 100%;
+	top: 50%;
+	margin-left: -8px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+.header3{
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	font-family: STHupo;
+	color: #FFFFFF;
+	font-size: 12px;
+	background-position: -111px -277px;
+}
+
+.p1{
+	background-image: url(../../img/hg_bg.png);
+	background-size: 100% 100%;
+	height: 426px;
+	text-align: center;
+}
+#canvas{
+	width: 328px;
+	border: 2px solid #58b7eb;
+	border-top: none;
+	margin: auto;
+	border-radius: 0 0 30px 30px;
+	height: 400px;
+}
