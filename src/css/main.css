@@ -1,8 +1,88 @@
-*{
-	margin: 0;
-	padding: 0;
+body {
+  line-height: 1;
 }
 
+a,
+button,
+input,
+textarea {
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.onehidden {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.mithidden2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+a {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: 0 0;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #ccc;
+}
+
+a,
+span,
+p,
+img,
+textarea,
+body,
+div,
+input,
+canvas,
+section,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+i,
+iframe,
+tr,
+ul,
+li,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+    box-sizing: border-box;
+    /*font-family: 'Helvetica Neue', 'Microsoft Yahei', Tohoma;*/
+    outline: 0;
+    -webkit-tap-highlight-color: transparent
+}
 /*引入字体*/
 @font-face {
 	font-family:PF;
