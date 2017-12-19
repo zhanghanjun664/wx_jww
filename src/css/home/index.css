@@ -1,6 +1,6 @@
 
 .wrap{
-	padding: 45px 8px 0;
+	padding: 50px 8px 0;
 	font-size: 14px;
 	min-height: 100%;
 	background-image: url(../../img/hi_bg.png);
@@ -8,19 +8,23 @@
 }
 
 .sp_bg{
-	background-image: url(../../img/sp6.png);
+	background-image: url(../../img/sp9.png);
 	background-repeat: no-repeat;
 }
 
 .header{
 	position: fixed;
 	top: 0;
-	left: 8px;
-	right: 8px;
+	left: 0;
+	right: 0;
+	padding: 0 8px;
 	display: flex;
-	height: 45px;
+	height: 50px;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 9;
+	background-image: url(../../img/hi_bg.png);
+	background-size: 100%;
 }
 .header1{
 	display: flex;
@@ -58,7 +62,7 @@
 }
 .btn_addMoney{
 	background-position: -1px -1px;
-	width: 32px;
+	width: 31px;
 	height: 30px;
 	position: absolute;
 	left: 100%;
@@ -68,18 +72,18 @@
 	-webkit-transform: translateY(-50%);
 }
 .header3{
-	width: 32px;
-	height: 30px;
-	line-height: 30px;
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
 	text-align: center;
 	font-family: STHupo;
 	color: #FFFFFF;
-	font-size: 12px
-	background-position: -65px -3px;
+	font-size: 12px;
+	background-position: -59px -1px;
 }
 
 .p1{
-	margin: 5px 0 8px;
+	margin: 0px 0 8px;
 }
 .hi_banner{
 	height: 120px;
@@ -134,14 +138,15 @@
 	margin-left: 8px;
 }
 .item_desc2{
-	width: 39px;
-	height: 39px;
-	background-position: -124px -2px;
-	margin-right: 6px;
+	width: 16px;
+	height: 18px;
+	background-position: -19px -54px;
+	margin-right: 3px;
 }
 .item_desc3{
 	color: #F2A83C;
 	margin-right: 5px;
+	font-size: 12px;
 }
 .item_desc_box{
 	display: flex;
