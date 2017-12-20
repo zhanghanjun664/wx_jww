@@ -1,0 +1,102 @@
+body {
+  width: 100%;
+  max-width: 750px;
+  height: 100%;
+  background: url(../../img/mm_bg.png) no-repeat center center;
+  background-size: cover; }
+
+.rewardlist {
+  width: 100%;
+  height: auto;
+  padding: 15px 8px; }
+  .rewardlist ul li {
+    width: 100%;
+    height: auto;
+    padding: 20px 90px 20px 16px;
+    min-height: 74px;
+    font-family: PF;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 10px; }
+    .rewardlist ul li .title {
+      width: 100%;
+      height: auto;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      color: #333333;
+      font-size: 15px; }
+    .rewardlist ul li .gray {
+      font-size: 11px;
+      color: #999999; }
+    .rewardlist ul li .reward_number {
+      padding-left: 45px;
+      color: #EC662B;
+      font-size: 25px;
+      height: 39px;
+      line-height: 39px;
+      position: absolute;
+      right: 17px;
+      top: 50%;
+      transform: translateY(-50%); }
+      .rewardlist ul li .reward_number:before {
+        content: '';
+        width: 39px;
+        height: 39px;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url(../../img/sp.png) no-repeat;
+        background-position: -124px -2px; }
+
+.norewar {
+  min-height: 400px;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  font-family: PF;
+  bottom: 75px; }
+  .norewar .contents {
+    width: 100%;
+    height: auto;
+    text-align: center; }
+    .norewar .contents .logos {
+      padding-top: 90px;
+      width: 100%;
+      text-align: center;
+      font-size: 23px;
+      color: #FFFFFF;
+      position: relative;
+      margin-bottom: 115px; }
+      .norewar .contents .logos:after {
+        content: '';
+        width: 90px;
+        height: 70px;
+        position: absolute;
+        left: 50%;
+        top: 0px;
+        transform: translateX(-50%);
+        background: url(../../img/sp.png) no-repeat;
+        background-position: -202px -202px; }
+    .norewar .contents .shares {
+      width: 100%;
+      height: auto;
+      text-align: center; }
+      .norewar .contents .shares .text {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 0px 10px;
+        line-height: 1.6;
+        color: #FFFFFF;
+        font-size: 14px; }
+        .norewar .contents .shares .text span {
+          color: #FBEB4E; }
+      .norewar .contents .shares button {
+        width: 258px;
+        height: 86px;
+        border: 0px;
+        background: url(../../img/btn_share.png) no-repeat top center;
+        background-size: 258px 86px;
+        margin-top: 20px; }

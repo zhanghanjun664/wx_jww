@@ -1,56 +1,84 @@
- @function rem($flexible) {
-     @if $flexible !=0 {
-         $flexible: $flexible/750*10+rem;
-     }
-     @return $flexible;
- }
- 
- body {
+body,html{
+    max-width: 750px; margin:0 auto;
+}
+body {
      width: 100%;
      height: 100%;
      background: url(../../img/mm_bg.png) no-repeat center center;
      background-size: cover;
+    
  }
  
  .orderlist {
      width: 100%;
      height: auto;
-     padding: rem(30) rem(16);
+     padding: 15px 8px;
      ul {
          li {
              width: 100%;
              height: auto;
-             padding: rem(32) rem(58) rem(33) rem(231);
-             min-height: rem(208);
+             padding: 16px 29px 17px 116px;
+             min-height:104px;
              font-family: PF;
              background-color: #FFFFFF;
-             border-radius: rem(6);
+             border-radius: 4px;
              position: relative;
+             margin-bottom: 10px;
              .averimg {
-                 width: rem(139);
-                 height: rem(143);
+                 width: 70px;
+                 height: 72px;
                  position: absolute;
-                 top: rem(32);left: rem(48);
-                 img{
-                     width: 100%;height: auto;max-height: rem(143);
+                 top:16px;
+                 left: 24px;
+                 img {
+                     width: 100%;
+                     height: auto;
+                     max-height: 72px;
                  }
              }
-           .title{
-               width: 100%;height: auto;line-height: 1.5;margin-bottom: rem(20);
-               color:#333333 100%;font-size: rem(30);
-           } 
-           .gray{
-               font-size: rem(22);
-               color: #999999 100%;
-               margin-bottom: rem(20);
-           } 
-            &:before{
-                width: rem(241);height: rem(54);
-                content: ' ';background: url(../../img/mm_listDecorate.png) no-repeat;
-                background-size: rem(241) rem(54);position: absolute;
-                bottom: 0px;right: 0px;
-            } 
-             
+             .title {
+                 width: 100%;
+                 height: auto;
+                 line-height: 1.5;
+                 margin-bottom: 10px;
+                 color: #333333;
+                 font-size: 15px;
+             }
+             .gray {
+                 font-size: 11px;
+                 color: #999999;
+                 margin-bottom: 10px;
+             }
+             &:before {
+                 width: 120px;
+                 height: 27px;
+                 content: ' ';
+                 background: url(../../img/mm_listDecorate.png) no-repeat;
+                 background-size:120px 27px;
+                 position: absolute;
+                 bottom: 0px;
+                 right: 0px;
+             }
+             .product_number {
+                 padding-left: 13px;
+                 color: #EC662B;
+                 font-size: 25px;
+                 height: 23px;
+                 line-height: 23px;
+                 position: absolute;
+                 right: 17px;
+                 top: 50%;
+                 transform: translateY(-50%);
+                 &:before {
+                     content: 'x';
+                     width:8px;
+                     height: 6px;
+                     position: absolute;
+                     line-height: 6px;
+                     font-size: 15px;
+                     bottom: 5px;left: 0px; 
+                 }
+             }
          }
      }
  }

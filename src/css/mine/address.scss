@@ -1,0 +1,49 @@
+body {
+    width: 100%;
+    max-width: 750px;
+    height: 100%;
+}
+
+.address {
+    $h: 44px;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px 0px 0px;
+    .item_bar {
+        position: relative;
+        height: $h;
+        line-height: $h;
+        padding-left: 100px;
+        font-size: 15px;
+        width: 100%;
+        border-bottom: 1px solid #eaedf2;
+        .lable {
+            position: absolute;
+            left: 15px;
+            height: 100%;
+            line-height: $h;
+            color: #333333;
+        }
+        input {
+            width: 100%;
+            height: 100%;
+            border: 0px; 
+        }
+      
+    }
+    
+    .submit_btn{
+        width: 100%;height: auto;
+        margin-top: 55px;text-align: center;
+        button{
+            width: 284px;height: 45px;line-height: 40px;padding-bottom: 5px;
+            background: url(../../img/btn_disSubmit.png) no-repeat top center;
+            background-size: 284px auto;border: 0px;
+        }
+        .active{
+            background: url(../../img/btn_submit.png) no-repeat top center;
+            background-size: 284px auto;border: 0px;
+        }
+    }
+    
+}

@@ -1,0 +1,87 @@
+body,
+html {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+body {
+    width: 100%;
+    max-width: 750px;
+    height: 100%;
+    background: url(../../img/mm_bg.png) no-repeat center center;
+    background-size: cover;
+}
+
+.receivelist {
+    width: 100%;
+    height: auto;
+    padding: 15px 8px;
+    ul {
+        li {
+            width: 100%;
+            height: auto;
+            padding: 16px 115px 17px 62px;
+            min-height: 74px;
+            font-family: PF;
+            background-color: #FFFFFF;
+            border-radius: 4px;
+            position: relative;
+            margin-bottom: 10px;
+            .averimg {
+                width: 33px;
+                height: 37px;
+                position: absolute;
+                top: 20px;
+                left: 17px;
+                img {
+                    width: 100%;
+                    height: auto;
+                    max-height: 37px;
+                }
+            }
+            .title {
+                width: 100%;
+                height: auto;
+                line-height: 1.5;
+                margin-bottom: 8px;
+                color: #333333;
+                font-size: 15px;
+            }
+            .gray {
+                font-size: 11px;
+                color: #999999;
+                span{
+                    color:#79CF69;
+                }
+            }
+            .date {
+                padding-left: 15px;
+                color: #999999;
+                font-size: 11px;
+                height: 20px;
+                line-height: 20px;
+                position: absolute;
+                right: 18px;
+                top: 50%;
+                transform: translateY(-50%);
+                &:before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    top: 50%;
+                    left: 0px;
+                    transform: translateY(-50%);
+                    background: url(../../img/sp.png) no-repeat;
+                    background-position: -271px -286px;
+                }
+            }
+            .uning{
+               &:before { 
+                background: url(../../img/sp.png) no-repeat;
+                    background-position: -307px -285px;
+               } 
+            }
+        }
+    }
+}

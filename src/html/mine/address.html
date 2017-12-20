@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>娃娃哪儿跑</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../../css/main.css" />
+		<link rel="stylesheet" href="../../css/mine/address.css" />
+		<!--<script src="../../js/flexible.js" type="text/javascript" charset="utf-8"></script>-->
+	</head>
+
+	<body>
+		<section class="address">
+			<div class="item_bar" id="name">
+				<div class="lable">收货人 </div>
+				<input type="text" placeholder="姓名"  />
+			</div>
+			<!--手机号-->
+			<div class="item_bar" id="phone">
+				<div class="lable">手机号 </div>
+				<input type="text" placeholder="手机号码" />
+			</div>
+			<!--收货地址 请输入详细地址-->
+			<div class="item_bar" id="address">
+				<div class="lable">收货地址 </div>
+				<input type="text" placeholder="请输入详细地址" />
+			</div>
+			<div class="submit_btn">
+				<button class=""></button>
+			</div>
+		</section>
+
+	</body>
+	<script src="../../js/jquery3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<script>
+		var name,phone,address;
+		$('.item_bar').bind('input propertychange', function() {
+			var type=$(this).attr('id');
+			if(type=='name'){
+				name=$(this).find('input').val();
+			}else if(type=='phone'){
+				phone=$(this).find('input').val();
+			}else if(type=='address'){
+				address=$(this).find('input').val();
+			}
+			if(name&&phone&&address){
+				$('.submit_btn button').addClass('active');
+			}else{
+				$('.submit_btn button').removeClass('active');
+			}
+			
+		});
+		
+		
+	</script>
+
+</html>
