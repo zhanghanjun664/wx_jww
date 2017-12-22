@@ -1,0 +1,167 @@
+body,
+html {
+  max-width: 750px;
+  margin: 0 auto; }
+
+.level {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 18% 13px 75px 13px; }
+  .level .level_content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../../img/md_border.png) no-repeat top center;
+    background-size: 100% 100%;
+    padding: 57px 10px 6px 10px; }
+    .level .level_content .top_nav {
+      width: 85%;
+      height: auto;
+      position: absolute;
+      top: -5%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex; }
+      .level .level_content .top_nav > div {
+        flex: 1;
+        height: 50px;
+        padding: 0px 5px;
+        text-align: center;
+        position: relative;
+        background: url(../../img/md_box_normal.png) no-repeat bottom center;
+        background-size: 100% auto; }
+      .level .level_content .top_nav img {
+        width: 94%;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: auto; }
+      .level .level_content .top_nav .text {
+        width: 100%;
+        color: #FEF9EC;
+        font-size: 17px;
+        position: absolute;
+        bottom: 8px;
+        left: 50%;
+        transform: translateX(-50%); }
+      .level .level_content .top_nav .active {
+        background: url(../../img/md_box_active.png) no-repeat bottom center;
+        background-size: 100% auto; }
+        .level .level_content .top_nav .active .text {
+          bottom: 15px; }
+    @media screen and (max-width: 360px) {
+      .level .level_content .top_nav {
+        top: -7%; }
+        .level .level_content .top_nav .text {
+          bottom: 6px;
+          font-size: 15px; }
+      .level .level_content .active .text {
+        bottom: 12px; } }
+    .level .level_content .contents {
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+      padding-top: 6px;
+      padding-bottom: 60px; }
+      .level .level_content .contents ul {
+        width: 100%;
+        height: auto; }
+        .level .level_content .contents ul li {
+          width: 33.33%;
+          text-align: center;
+          float: left;
+          height: auto;
+          margin-bottom: 20px; }
+          .level .level_content .contents ul li .flex {
+            max-width: 105px;
+            width: 96%;
+            display: inline-block;
+            height: auto; }
+          .level .level_content .contents ul li .item {
+            width: 100%;
+            height: 109px;
+            padding-top: 20px;
+            background: url(../../img/exchange_border.png) no-repeat top center;
+            background-size: 100% 100%;
+            text-align: center;
+            position: relative; }
+            .level .level_content .contents ul li .item .aver {
+              width: auto;
+              height: 55px;
+              display: inline-block;
+              position: relative; }
+              .level .level_content .contents ul li .item .aver img {
+                width: auto;
+                height: 55px; }
+              .level .level_content .contents ul li .item .aver .num {
+                font-size: 15px;
+                color: #fae1bf;
+                font-family: sf;
+                position: absolute;
+                bottom: 0px;
+                right: -15px; }
+            .level .level_content .contents ul li .item .button {
+              width: 26%;
+              height: auto;
+              position: absolute;
+              right: 0px;
+              bottom: 0px; }
+              .level .level_content .contents ul li .item .button img {
+                width: 100%;
+                height: auto; }
+          .level .level_content .contents ul li .button_box {
+            width: 100%;
+            margin-top: 10px; }
+            .level .level_content .contents ul li .button_box > div {
+              width: 49px;
+              height: 22px;
+              text-align: center;
+              display: inline-block; }
+            .level .level_content .contents ul li .button_box .to_give {
+              background: url(../../img/btn_give.png) no-repeat center center;
+              background-size: 100% 100%;
+              float: left; }
+            .level .level_content .contents ul li .button_box .to_sell {
+              background: url(../../img/btn_sell.png) no-repeat center center;
+              background-size: 100% 100%;
+              float: right; }
+        @media screen and (max-width: 360px) {
+          .level .level_content .contents ul li {
+            margin-bottom: 15px; }
+            .level .level_content .contents ul li .flex {
+              width: 90%; }
+            .level .level_content .contents ul li .button_box > div {
+              width: 46%;
+              height: 22px; }
+            .level .level_content .contents ul li .item {
+              height: 93px; }
+            .level .level_content .contents ul li .button_box {
+              width: 28%; } }
+  .level .top_tips {
+    width: 100%;
+    height: 12%;
+    position: absolute;
+    top: 1.5%;
+    left: 0px;
+    background: url(../../img/decorate2.png) no-repeat center center;
+    background-size: 95% 100%; }
+  .level .closed {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../../img/sp.png) no-repeat;
+    background-position: -418px -96px; }
+
+.closed {
+  width: 40px;
+  height: 40px;
+  background: url(../../img/sp.png) no-repeat;
+  background-position: -418px -96px; }

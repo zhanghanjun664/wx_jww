@@ -1,0 +1,117 @@
+body,
+html {
+    max-width: 750px;
+    margin: 0 auto;  background-color: #FEF9EC;
+}
+header {
+    width: 100%;
+    height: 78px;
+    background: url(../../img/ri_bg.png) no-repeat top center;
+    background-size: cover;
+    position: fixed;top: 0px;
+   img{
+       width: 35%;position: absolute;
+       bottom: 0px;left: 50%;transform: translateX(-50%);
+   }
+}
+
+.list_box {
+    width: 100%;
+    height: 100%;overflow: hidden;
+   padding-top: 85px;
+    background: #FE6ADC;
+    /* 一些不支持背景渐变的浏览器 */
+    background: -moz-linear-gradient(top, #FE6ADC, #7991FD 5%, #B3E5FF 40%, #57A9FD 50%, #77D4FD 60%, #FBBAF0 100%);
+    background: -webkit-linear-gradient(top, #FE6ADC, #7991FD 5%, #B3E5FF 40%, #57A9FD 50%, #77D4FD 60%, #FBBAF0 100%);
+    background: -o-linear-gradient(top, #FE6ADC, #7991FD 5%, #B3E5FF 40%, #57A9FD 50%, #77D4FD 60%, #FBBAF0 100%);
+    .contents {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        background-color: #FEF9EC;
+        padding-top: 6px;
+        padding-bottom: 60px;
+        ul {
+            width: 100%;
+            height: auto;
+            li {
+                width: 33.33%;
+                text-align: center;
+                float: left;
+                height: auto;
+                margin-bottom: 20px;
+                .flex {
+                    width: 108px;
+                    display: inline-block;
+                    height: auto;
+                }
+                .item {
+                    width: 100%;
+                    height: 109px;
+                    padding-top: 20px;
+                    background: url(../../img/good_border.png) no-repeat top center;
+                    background-size: 100% 100%;
+                    text-align: center;
+                    .aver {
+                        width: auto;
+                        height: 55px;
+                        display: inline-block;
+                        position: relative;
+                        img {
+                            width: auto;
+                            height: 55px;
+                        }
+                        .num {
+                            font-size: 15px;
+                            color: rgba(250, 225, 191, 1);
+                            font-family: sf;
+                            position: absolute;
+                            bottom: 0px;
+                            right: -15px;
+                        }
+                    }
+                    .name {
+                        width: 100%;
+                        height: auto;
+                        margin-top: 5px;
+                        text-align: center;
+                        color: #EF7900;
+                        font-size: 12px;
+                    }
+                }
+                .button_box {
+                    width: 100%;
+                    margin-top: 10px;
+                    >div {
+                        width: 49px;
+                        height: 22px;
+                        text-align: center;
+                        display: inline-block;
+                    }
+                    .to_give {
+                        background: url(../../img/btn_give.png) no-repeat center center;
+                        background-size: 100% 100%;
+                        float: left;
+                    }
+                    .to_sell {
+                        background: url(../../img/btn_sell.png) no-repeat center center;
+                        background-size: 100% 100%;
+                        float: right;
+                    }
+                }
+            }
+            @media screen and (max-width: 360px) {
+               li{
+                   margin-bottom: 15px;
+                    .flex {
+                    width: 90%;
+                }
+                .button_box >div{
+                   width: 46%;
+                   height: 22px; 
+                }
+               }
+            }
+        }
+    }
+}
