@@ -79,6 +79,7 @@ html {
         .contents {
             width: 100%;
             height: 100%;
+            display: none;
             overflow-y: scroll;
             padding-top: 6px;
             padding-bottom: 60px;
@@ -143,17 +144,40 @@ html {
                             text-align: center;
                             display: inline-block;
                         }
-                        .to_give {
-                            background: url(../../img/btn_give.png) no-repeat center center;
+                        .duihuan {
+                            background: url(../../img/btn_exchange.png) no-repeat center center;
                             background-size: 100% 100%;
-                            float: left;
                         }
-                        .to_sell {
-                            background: url(../../img/btn_sell.png) no-repeat center center;
-                            background-size: 100% 100%;
-                            float: right;
-                        }
+                        
                     }
+                    .name_text{
+                        margin-top: 10px;text-align: center;
+                        font-size: 13px;color: #666666;font-family: PF;
+                    }
+                    //活动中
+                    .item2{
+                                     width: 100%;overflow: hidden;
+                        height: 109px;
+                        padding-top: 20px;
+                        text-align: center;
+                        position: relative;
+                        .aver {
+                            width: auto;
+                            height: 80px;
+                            display: inline-block;
+                            position: relative;
+                            img {
+                                width: auto;
+                                height:80px;
+                            }
+                           
+                        }
+                       
+                    }
+                    
+                    
+                    
+                    
                 }
                 @media screen and (max-width: 360px) {
                     li {
@@ -162,14 +186,14 @@ html {
                             width: 90%;
                         }
                         .button_box>div {
-                            width: 46%;
+//                          width: 46%;
                             height: 22px;
                         }
                         .item{
-                            height: 93px;
+                            height: 92px;
                         }
                         .button_box{
-                            width: 28%;
+//                          width: 28%;
                         }
                     }
                 }
@@ -203,3 +227,5 @@ html {
     background: url(../../img/sp.png) no-repeat;
     background-position: -418px -96px;
 }
+
+

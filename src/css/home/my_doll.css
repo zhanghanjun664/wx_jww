@@ -65,6 +65,7 @@ html {
     .level .level_content .contents {
       width: 100%;
       height: 100%;
+      display: none;
       overflow-y: scroll;
       padding-top: 6px;
       padding-bottom: 60px; }
@@ -122,26 +123,39 @@ html {
               height: 22px;
               text-align: center;
               display: inline-block; }
-            .level .level_content .contents ul li .button_box .to_give {
-              background: url(../../img/btn_give.png) no-repeat center center;
-              background-size: 100% 100%;
-              float: left; }
-            .level .level_content .contents ul li .button_box .to_sell {
-              background: url(../../img/btn_sell.png) no-repeat center center;
-              background-size: 100% 100%;
-              float: right; }
+            .level .level_content .contents ul li .button_box .duihuan {
+              background: url(../../img/btn_exchange.png) no-repeat center center;
+              background-size: 100% 100%; }
+          .level .level_content .contents ul li .name_text {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 13px;
+            color: #666666;
+            font-family: PF; }
+          .level .level_content .contents ul li .item2 {
+            width: 100%;
+            overflow: hidden;
+            height: 109px;
+            padding-top: 20px;
+            text-align: center;
+            position: relative; }
+            .level .level_content .contents ul li .item2 .aver {
+              width: auto;
+              height: 80px;
+              display: inline-block;
+              position: relative; }
+              .level .level_content .contents ul li .item2 .aver img {
+                width: auto;
+                height: 80px; }
         @media screen and (max-width: 360px) {
           .level .level_content .contents ul li {
             margin-bottom: 15px; }
             .level .level_content .contents ul li .flex {
               width: 90%; }
             .level .level_content .contents ul li .button_box > div {
-              width: 46%;
               height: 22px; }
             .level .level_content .contents ul li .item {
-              height: 93px; }
-            .level .level_content .contents ul li .button_box {
-              width: 28%; } }
+              height: 92px; } }
   .level .top_tips {
     width: 100%;
     height: 12%;
