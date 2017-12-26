@@ -1,0 +1,231 @@
+body,
+html {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.level {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(00, 00, 00, 0.7);
+    padding: 18% 13px 75px 13px;
+    .level_content {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background: url(../../img/md_border.png) no-repeat top center;
+        background-size: 100% 100%;
+        padding: 57px 10px 6px 10px;
+        .top_nav {
+            width: 85%;
+            height: auto;
+            position: absolute;
+            top: -5%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            >div {
+                flex: 1;
+                height: 50px;
+                padding: 0px 5px;
+                text-align: center;
+                position: relative;
+                background: url(../../img/md_box_normal.png) no-repeat bottom center;
+                background-size: 100% auto;
+            }
+            img {
+                width: 94%;
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+                height: auto;
+            }
+            .text {
+                width: 100%;
+                color: #FEF9EC;
+                font-size: 17px;
+                position: absolute;
+                bottom: 8px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .active {
+                background: url(../../img/md_box_active.png) no-repeat bottom center;
+                background-size: 100% auto;
+                img {}
+                .text {
+                    bottom: 15px;
+                }
+            }
+        }
+        @media screen and (max-width: 360px) {
+            .top_nav {
+                top: -7%;
+                .text {
+                    bottom: 6px;
+                    font-size: 15px;
+                }
+            }
+            .active {
+                .text {
+                    bottom: 12px;
+                }
+            }
+        }
+        .contents {
+            width: 100%;
+            height: 100%;
+            display: none;
+            overflow-y: scroll;
+            padding-top: 6px;
+            padding-bottom: 60px;
+            ul {
+                width: 100%;
+                height: auto;
+                li {
+                    width: 33.33%;
+                    text-align: center;
+                    float: left;
+                    height: auto;
+                    margin-bottom: 20px;
+                    .flex {
+                        max-width: 105px;width: 96%;
+                        display: inline-block;
+                        height: auto;
+                    }
+                    .item {
+                        width: 100%;
+                        height: 109px;
+                        padding-top: 20px;
+                        background: url(../../img/exchange_border.png) no-repeat top center;
+                        background-size: 100% 100%;
+                        text-align: center;
+                        position: relative;
+                        .aver {
+                            width: auto;
+                            height: 55px;
+                            display: inline-block;
+                            position: relative;
+                            img {
+                                width: auto;
+                                height: 55px;
+                            }
+                            .num {
+                                font-size: 15px;
+                                color: rgba(250, 225, 191, 1);
+                                font-family: sf;
+                                position: absolute;
+                                bottom: 0px;
+                                right: -15px;
+                            }
+                        }
+                        .button {
+                            width: 26%;
+                            height: auto;
+                            position: absolute;
+                            right: 0px;
+                            bottom: 0px;
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                    .button_box {
+                        width: 100%;
+                        margin-top: 10px;
+                        >div {
+                            width: 49px;
+                            height: 22px;
+                            text-align: center;
+                            display: inline-block;
+                        }
+                        .duihuan {
+                            background: url(../../img/btn_exchange.png) no-repeat center center;
+                            background-size: 100% 100%;
+                        }
+                        
+                    }
+                    .name_text{
+                        margin-top: 10px;text-align: center;
+                        font-size: 13px;color: #666666;font-family: PF;
+                    }
+                    //活动中
+                    .item2{
+                                     width: 100%;overflow: hidden;
+                        height: 109px;
+                        padding-top: 20px;
+                        text-align: center;
+                        position: relative;
+                        .aver {
+                            width: auto;
+                            height: 80px;
+                            display: inline-block;
+                            position: relative;
+                            img {
+                                width: auto;
+                                height:80px;
+                            }
+                           
+                        }
+                       
+                    }
+                    
+                    
+                    
+                    
+                }
+                @media screen and (max-width: 360px) {
+                    li {
+                        margin-bottom: 15px;
+                        .flex {
+                            width: 90%;
+                        }
+                        .button_box>div {
+//                          width: 46%;
+                            height: 22px;
+                        }
+                        .item{
+                            height: 92px;
+                        }
+                        .button_box{
+//                          width: 28%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .top_tips {
+        width: 100%;
+        height: 12%;
+        position: absolute;
+        top: 1.5%;
+        left: 0px;
+        background: url(../../img/decorate2.png) no-repeat center center;
+        background-size: 95% 100%;
+    }
+    .closed {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url(../../img/sp.png) no-repeat;
+        background-position: -418px -96px;
+    }
+}
+
+.closed {
+    width: 40px;
+    height: 40px;
+    background: url(../../img/sp.png) no-repeat;
+    background-position: -418px -96px;
+}
+
+

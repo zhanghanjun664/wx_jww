@@ -1,0 +1,104 @@
+@charset "UTF-8";
+body,
+html {
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: #FEF9EC; }
+
+header {
+  width: 100%;
+  height: 78px;
+  background: url(../../img/ri_bg.png) no-repeat top center;
+  background-size: cover;
+  position: fixed;
+  top: 0px; }
+  header img {
+    width: 35%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%); }
+
+.list_box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 85px;
+  background: #FE6ADC;
+  /* 一些不支持背景渐变的浏览器 */
+  background: -moz-linear-gradient(top, #FE6ADC, #7991FD 5%, #B3E5FF 40%, #57A9FD 50%, #77D4FD 60%, #FBBAF0 100%);
+  background: -webkit-linear-gradient(top, #FE6ADC, #7991FD 5%, #B3E5FF 40%, #57A9FD 50%, #77D4FD 60%, #FBBAF0 100%);
+  background: -o-linear-gradient(top, #FE6ADC, #7991FD 5%, #B3E5FF 40%, #57A9FD 50%, #77D4FD 60%, #FBBAF0 100%); }
+  .list_box .contents {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #FEF9EC;
+    padding-top: 6px;
+    padding-bottom: 60px; }
+    .list_box .contents ul {
+      width: 100%;
+      height: auto; }
+      .list_box .contents ul li {
+        width: 33.33%;
+        text-align: center;
+        float: left;
+        height: auto;
+        margin-bottom: 20px; }
+        .list_box .contents ul li .flex {
+          width: 108px;
+          display: inline-block;
+          height: auto; }
+        .list_box .contents ul li .item {
+          width: 100%;
+          height: 109px;
+          padding-top: 20px;
+          background: url(../../img/good_border.png) no-repeat top center;
+          background-size: 100% 100%;
+          text-align: center; }
+          .list_box .contents ul li .item .aver {
+            width: auto;
+            height: 55px;
+            display: inline-block;
+            position: relative; }
+            .list_box .contents ul li .item .aver img {
+              width: auto;
+              height: 55px; }
+            .list_box .contents ul li .item .aver .num {
+              font-size: 15px;
+              color: #fae1bf;
+              font-family: sf;
+              position: absolute;
+              bottom: 0px;
+              right: -15px; }
+          .list_box .contents ul li .item .name {
+            width: 100%;
+            height: auto;
+            margin-top: 5px;
+            text-align: center;
+            color: #EF7900;
+            font-size: 12px; }
+        .list_box .contents ul li .button_box {
+          width: 100%;
+          margin-top: 10px; }
+          .list_box .contents ul li .button_box > div {
+            width: 49px;
+            height: 22px;
+            text-align: center;
+            display: inline-block; }
+          .list_box .contents ul li .button_box .to_give {
+            background: url(../../img/btn_give.png) no-repeat center center;
+            background-size: 100% 100%;
+            float: left; }
+          .list_box .contents ul li .button_box .to_sell {
+            background: url(../../img/btn_sell.png) no-repeat center center;
+            background-size: 100% 100%;
+            float: right; }
+      @media screen and (max-width: 360px) {
+        .list_box .contents ul li {
+          margin-bottom: 15px; }
+          .list_box .contents ul li .flex {
+            width: 90%; }
+          .list_box .contents ul li .button_box > div {
+            width: 46%;
+            height: 22px; } }
